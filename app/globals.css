@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply m-2 p-2; /* Margin: 1rem, Padding: 1rem */
+}
+
+main,
+nav {
+  @apply max-w-3xl mx-auto my-12;
+}
+p {
+  @apply mt-2;
+}
+h1 {
+  @apply scroll-m-20 text-3xl font-extrabold tracking-tight;
+}
+h2 {
+  @apply scroll-m-20 border-b pb-2 text-2xl font-semibold tracking-tight transition-colors first:mt-0;
+}
