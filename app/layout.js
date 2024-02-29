@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import Header from "@/components/Header/Header";
 
 import "./globals.css";
 
@@ -16,7 +17,13 @@ export const metadata = {
 export default async function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+        <div className="flex justify-center py-5">
+          <p>© 2023. All rights reserved</p>
+        </div>
+      </body>
     </html>
   );
 }
