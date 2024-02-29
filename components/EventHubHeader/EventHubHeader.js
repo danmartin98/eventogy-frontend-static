@@ -23,7 +23,7 @@ const EventHubHeader = () => {
     "rounded-3xl text-blue-500 hover:bg-blue-500 hover:text-white  data-[state=on]:bg-blue-500 data-[state=on]:text-white ";
 
   return (
-    <div className="flex items-center justify-between mb-5">
+    <div className="flex flex-col lg:flex-row items-center justify-between mb-5 sm:flex-grow">
       <div className="mt-4">
         <ToggleGroup
           type="single"
@@ -67,7 +67,7 @@ const EventHubHeader = () => {
           </Link>
         </ToggleGroup>
       </div>
-      <div className="flex items-center justify-between gap-2">
+      <div className="flex items-center justify-between gap-2 mt-4">
         <Button variant="ghost" className="p-1">
           <Grid3X3 className="h-5 w-5" />
         </Button>
